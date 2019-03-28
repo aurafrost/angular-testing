@@ -3,18 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Child1Component } from './child1/child1.component';
-import { Childofchild1Component } from './child1/childofchild1/childofchild1.component';
+import { ChildrenModule } from './child1/children.module';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Child1Component,
-    Childofchild1Component
+    UserComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChildrenModule
   ],
   providers: [],
   bootstrap: [AppComponent]
