@@ -1,5 +1,6 @@
 import { Before, Given, Then, When } from 'cucumber';
 import { expect } from 'chai';
+import { browser, element, by, ExpectedConditions } from 'protractor';
 
 import { AppPage } from '../pages/app.po';
 
@@ -9,12 +10,12 @@ Before(() => {
   page = new AppPage();
 });
 
-Given('I am on the home page', async () => {
+Given(/^I am on the home page$/, async () => {
   await page.navigateTo();
 });
 
-When('I do nothing', () => {});
+When(/^I do nothing$/, () => {});
 
-Then('I should see the title', async () => {
+Then(/^I should see the title$/, async () => {
   expect(await page.getTitleText()).to.equal('Welcome to angular-cli-cucumber-demo!');
 });
