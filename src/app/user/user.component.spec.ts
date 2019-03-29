@@ -7,24 +7,26 @@ describe('UserComponent', () => {
   let component: UserComponent;
   let fixture: ComponentFixture<UserComponent>;
 
-  beforeEach(() => {
+  beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ UserComponent ]
     })
     .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(UserComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
   });
 
   it('should create the app', () => {
-    let fixture = TestBed.createComponent(UserComponent);
-    let app=fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
+    expect(component).toBeDefined();
   });
 
   it('should use the user name from the service',()=>{
-    let fixture = TestBed.createComponent(UserComponent);
-    let app=fixture.debugElement.componentInstance;
     let userService=fixture.debugElement.injector.get(UserService)
     fixture.detectChanges();
-    expect(userService.user.name).toEqual(app.user.name)
-  })
+    expect(userService.user.name).toEqual(component.user.name)
+  });
 });
