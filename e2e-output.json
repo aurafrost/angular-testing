@@ -1,0 +1,60 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "App page",
+    "line": 1,
+    "id": "app-page",
+    "tags": [],
+    "uri": "e2e\\src\\features\\app.feature",
+    "elements": [
+      {
+        "id": "app-page;first-scenario",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "First scenario",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open app page",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "app page loads",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "header \"Welcome to app!\" is displayed",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
