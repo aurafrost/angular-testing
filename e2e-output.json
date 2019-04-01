@@ -20,11 +20,20 @@
             "keyword": "Before",
             "hidden": true,
             "match": {
-              "location": "e2e\\src\\features\\app.steps.ts:8"
+              "location": "e2e\\src\\steps\\app.steps.ts:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e\\src\\steps\\appInput.steps.ts:8"
+            },
+            "result": {
+              "status": "passed"
             }
           },
           {
@@ -33,11 +42,11 @@
             "line": 5,
             "name": "I am on the home page",
             "match": {
-              "location": "e2e\\src\\features\\app.steps.ts:12"
+              "location": "e2e\\src\\steps\\app.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 841000000
+              "duration": 853000000
             }
           },
           {
@@ -46,10 +55,11 @@
             "line": 6,
             "name": "I do nothing",
             "match": {
-              "location": "e2e\\src\\features\\app.steps.ts:16"
+              "location": "e2e\\src\\steps\\app.steps.ts:16"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -58,11 +68,102 @@
             "line": 7,
             "name": "I should see the title",
             "match": {
-              "location": "e2e\\src\\features\\app.steps.ts:18"
+              "location": "e2e\\src\\steps\\app.steps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 33000000
+              "duration": 31000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "  Change input of name",
+    "keyword": "Feature",
+    "name": "Go to the home",
+    "line": 1,
+    "id": "go-to-the-home",
+    "tags": [],
+    "uri": "e2e\\src\\features\\appInput.feature",
+    "elements": [
+      {
+        "id": "go-to-the-home;home-page",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Home Page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e\\src\\steps\\appInput.steps.ts:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am waiting on the home page",
+            "match": {
+              "location": "e2e\\src\\steps\\appInput.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 557000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I change the name",
+            "match": {
+              "location": "e2e\\src\\steps\\appInput.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the name change",
+            "match": {
+              "location": "e2e\\src\\steps\\appInput.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92000000
             }
           },
           {

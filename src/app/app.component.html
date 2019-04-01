@@ -2,5 +2,10 @@
 <h1 id="title">
   Welcome to {{title}}!
 </h1>
-
+<br>
+Name: <input type="text" id="nameField" [(ngModel)]="name">
+<br>
+<div id="nameReturn">
+  {{name}}
+</div>
 <router-outlet></router-outlet>
