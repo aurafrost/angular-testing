@@ -1,45 +1,68 @@
 [
   {
+    "description": "  Display the title",
     "keyword": "Feature",
-    "name": "App page",
+    "name": "Go to the home",
     "line": 1,
-    "id": "app-page",
+    "id": "go-to-the-home",
     "tags": [],
     "uri": "e2e\\src\\features\\app.feature",
     "elements": [
       {
-        "id": "app-page;first-scenario",
+        "id": "go-to-the-home;home-page",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "First scenario",
+        "line": 4,
+        "name": "Home Page",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e\\src\\features\\app.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "I open app page",
+            "line": 5,
+            "name": "I am on the home page",
+            "match": {
+              "location": "e2e\\src\\features\\app.steps.ts:12"
+            },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 841000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
-            "name": "app page loads",
+            "line": 6,
+            "name": "I do nothing",
+            "match": {
+              "location": "e2e\\src\\features\\app.steps.ts:16"
+            },
             "result": {
-              "status": "undefined"
+              "status": "passed"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
-            "name": "header \"Welcome to app!\" is displayed",
+            "line": 7,
+            "name": "I should see the title",
+            "match": {
+              "location": "e2e\\src\\features\\app.steps.ts:18"
+            },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 33000000
             }
           },
           {
@@ -49,8 +72,7 @@
               "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]
