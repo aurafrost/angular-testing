@@ -9,8 +9,8 @@ export class AppPage {
     return element(by.css('app-root h1')).getText();
   }
   
-  changeInput(){
-    return element(by.id('nameField')).sendKeys("Bob");
+  changeInput(newName){
+    return element(by.id('nameField')).sendKeys(newName);
   }
 
   getInput() {

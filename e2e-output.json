@@ -46,7 +46,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 853000000
+              "duration": 859000000
             }
           },
           {
@@ -58,8 +58,7 @@
               "location": "e2e\\src\\steps\\app.steps.ts:16"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -72,7 +71,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31000000
+              "duration": 32000000
             }
           },
           {
@@ -137,7 +136,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 557000000
+              "duration": 538000000
             }
           },
           {
@@ -149,8 +148,7 @@
               "location": "e2e\\src\\steps\\appInput.steps.ts:16"
             },
             "result": {
-              "status": "passed",
-              "duration": 4000000
+              "status": "passed"
             }
           },
           {
@@ -162,8 +160,9 @@
               "location": "e2e\\src\\steps\\appInput.steps.ts:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 92000000
+              "status": "failed",
+              "duration": 60000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n\n    at Object.<anonymous> (C:\\Users\\jt963\\Documents\\VSWorkspace\\angular-testing\\e2e\\src\\steps\\appInput.steps.ts:21:37)\n    at step (C:\\Users\\jt963\\Documents\\VSWorkspace\\angular-testing\\node_modules\\tslib\\tslib.js:133:27)\n    at Object.next (C:\\Users\\jt963\\Documents\\VSWorkspace\\angular-testing\\node_modules\\tslib\\tslib.js:114:57)\n    at fulfilled (C:\\Users\\jt963\\Documents\\VSWorkspace\\angular-testing\\node_modules\\tslib\\tslib.js:104:62)\n    at process.internalTickCallback (internal/process/next_tick.js:77:7)"
             }
           },
           {
