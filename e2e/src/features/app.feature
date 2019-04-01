@@ -1,6 +1,7 @@
-Feature: App page
+Feature: Go to the home
+  Display the title
 
-  Scenario: First scenario
-    Given I open app page
-    When app page loads
-    Then header "Welcome to app!" is displayed
+  Scenario: Home Page
+    Given I am on the home page
+    When I do nothing
+    Then I should see the title

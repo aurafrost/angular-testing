@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
     "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
     "core-js": "^2.5.4",
     "cucumber": "^5.1.0",
     "protractor-cucumber-framework": "^6.1.1",

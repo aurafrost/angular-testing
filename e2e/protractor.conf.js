@@ -16,7 +16,7 @@ exports.config = {
   // cucumber command line options
   cucumberOpts: {
     // require step definition files before executing features
-    require: ['./src/steps/**/*.steps.ts'],
+    require: ['./src/features/**/*.steps.ts'],
     // <string[]> (expression) only execute the features or scenarios with tags matching the expression
     tags: [],
     // <boolean> fail if there are any undefined or pending steps

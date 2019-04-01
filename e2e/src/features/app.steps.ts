@@ -1,36 +1,20 @@
-import { Given, Before, When, Then } from 'cucumber';
-import { browser, element, by, ExpectedConditions } from 'protractor';
-import * as chai from 'chai';
-import * as chaiAsPromised from 'chai-as-promised';
+import { Before, Given, Then, When } from 'cucumber';
+import { expect } from 'chai';
+
 import { AppPage } from './app.po';
-const expect = chai.use(chaiAsPromised).expect;
 
-let appPage: AppPage = new AppPage();
-
-Given('I open a page', function () {
-  return browser.get('/').then(() => {
-    element(by.css('h1')).getText()
-      .then(text => {
-        expect(text).to.have.string("Welcome to app!")
-      })
-  });
-});
+let page: AppPage;
 
 Before(() => {
-  appPage = new AppPage();
+  page = new AppPage();
 });
 
-Given('I open app page', () => {
-  appPage.navigateTo();
+Given(/^I am on the home page$/, async () => {
+  await page.navigateTo();
 });
 
-When('app page loads', () => {
-  return browser.wait(ExpectedConditions.visibilityOf(appPage.getTitle()), 5000);
-});
+When(/^I do nothing$/, () => {});
 
-Then('header {string} is displayed', (title) => {
-  return appPage.getParagraphText()
-    .then(text => {
-      expect(text).to.have.string(title)
-    })
+Then(/^I should see the title$/, async () => {
+  expect(await page.getTitleText()).to.equal('Welcome to angular-testing!');
 });
