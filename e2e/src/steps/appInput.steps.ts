@@ -13,8 +13,8 @@ Given(/^I am waiting on the home page$/, async () => {
   await page.navigateTo();
 });
 
-When(/^I change the name$/, () => {
-  page.changeInput("Bob");
+When("I change the name to {string}", (newName) => {
+  page.changeInput(newName);
 });
 
 Then(/^I should see the name change$/, async () => {
