@@ -9,5 +9,5 @@ export class AppComponent {
   title = 'angular-testing';
   user={name:"Bob"}
   name="";
-
+  age:number;
 }

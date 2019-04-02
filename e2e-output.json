@@ -37,7 +37,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 823000000
+              "duration": 1092000000
             }
           },
           {
@@ -49,8 +49,7 @@
               "location": "e2e\\src\\steps\\app.steps.ts:18"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -63,7 +62,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31000000
+              "duration": 34000000
             }
           },
           {
@@ -80,10 +79,10 @@
         ]
       },
       {
-        "id": "go-to-the-home;home-page",
+        "id": "go-to-the-home;name-input",
         "keyword": "Scenario",
         "line": 16,
-        "name": "Home Page",
+        "name": "Name input",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -94,20 +93,21 @@
               "location": "e2e\\src\\steps\\app.steps.ts:8"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 10,
-            "name": "I am waiting on the home page",
+            "name": "I am on the home page 2",
             "match": {
               "location": "e2e\\src\\steps\\app.steps.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 545000000
+              "duration": 547000000
             }
           },
           {
@@ -133,7 +133,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 108000000
+              "duration": 100000000
             }
           },
           {
@@ -149,10 +149,10 @@
         ]
       },
       {
-        "id": "go-to-the-home;home-page",
+        "id": "go-to-the-home;name-input",
         "keyword": "Scenario",
         "line": 17,
-        "name": "Home Page",
+        "name": "Name input",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -170,13 +170,13 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 10,
-            "name": "I am waiting on the home page",
+            "name": "I am on the home page 2",
             "match": {
               "location": "e2e\\src\\steps\\app.steps.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 532000000
+              "duration": 551000000
             }
           },
           {
@@ -213,6 +213,281 @@
             },
             "result": {
               "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "go-to-the-home;correct-age-input",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Correct age input",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I am on the home page 3",
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 545000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I enter the keys 12 in the age field",
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:43"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should see the age change",
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "go-to-the-home;correct-age-input",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Correct age input",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I am on the home page 3",
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 563000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I enter the keys 98 in the age field",
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:43"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should see the age change",
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "go-to-the-home;incorrect-age-input",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Incorrect age input",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "I am on the home page 4",
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 545000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I enter the keys \"asd\" in the age field",
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I should not see the age change",
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "go-to-the-home;incorrect-age-input",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Incorrect age input",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "I am on the home page 4",
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 546000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I enter the keys \"derp\" in the age field",
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:56"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I should not see the age change",
+            "match": {
+              "location": "e2e\\src\\steps\\app.steps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]

@@ -23,14 +23,40 @@ Then("I should see the title", async () => {
 
 
 //Scenario 2
-Given("I am waiting on the home page", async () => {
+Given("I am on the home page 2", async () => {
   await page.navigateTo();
 });
 
 When("I change the name to {string}", (newName) => {
-  page.changeInput(newName);
+  page.setName(newName);
 });
 
 Then("I should see the name change", async () => {
-  expect(await page.getInput()).not.equal("");
+  expect(await page.getName()).not.equal("");
+});
+
+//scenario 3
+Given("I am on the home page 3", async () => {
+  await page.navigateTo();
+});
+
+When("I enter the keys {int} in the age field", (age) => {
+  page.setAge(age);
+});
+
+Then("I should see the age change", async () => {
+  expect(await page.getAge()).not.equal("");
+});
+
+//Scenario 4
+Given("I am on the home page 4", async () => {
+  await page.navigateTo();
+});
+
+When("I enter the keys {string} in the age field", (age) => {
+  page.setAge(age);
+});
+
+Then("I should not see the age change", async () => {
+  expect(await page.getAge()).to.equal("");
 });
