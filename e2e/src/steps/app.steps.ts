@@ -1,4 +1,4 @@
-import { Before, Given, Then, When } from 'cucumber';
+import { Before, Given, Then, When, After } from 'cucumber';
 import { expect } from 'chai';
 
 import { AppPage } from '../appPage.po';
@@ -59,4 +59,8 @@ When("I enter the keys {string} in the age field", (age) => {
 
 Then("I should not see the age change", async () => {
   expect(await page.getAge()).to.equal("");
+});
+
+After(() => {
+  
 });
